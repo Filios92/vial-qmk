@@ -17,7 +17,25 @@
     "diode_direction": "COL2ROW",
     "debounce": 5,
     "features": {
-        "swap_hands": true
+        "swap_hands": true,
+        "rgblight": true
+    },
+    "rgblight": {
+        "default": {
+            "val": 120
+        },
+        "led_count": 2,
+        "max_brightness": 200,
+        "sleep": true,
+        "split": true,
+        "split_count": [1, 1],
+        "animations": {
+            "breathing": true
+        }
+    },
+    "ws2812": {
+        "pin": "GP12",
+        "driver": "vendor"
     },
     "split": {
         "enabled": true,
