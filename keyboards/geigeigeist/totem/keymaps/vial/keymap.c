@@ -317,6 +317,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
     return true;
 }
+
+void keyboard_post_init_user(void) {
+    // gpio_set_pin_output(25);
+    // gpio_write_pin_low(25);
+
+    gpio_set_pin_output(11);
+    gpio_write_pin_high(11);
+}
+
 /*
   ╺━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╸
 
